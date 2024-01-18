@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pijaca</h1>
+
+    <div class="korpa">
+        <div class="ponuda">
+            <h4>Povrce</h4>
+            <div class="krompir">
+                <img src="potato.png" alt="">
+                <div class="opis">
+                    <p class="name">Krompir</p>
+                    <p>$10</p>
+                </div>
+                <div class="ulaz">
+                    <input type="number" id="krompir-kolicina" min="0" value="0">
+                    <br>
+                    <input type="button" class="krompir1" value="Dodaj" onclick="dodaj_u_korpu(this)">
+                </div>
+            </div>
+            <div class="krompir">
+                <img src="tomato.png" alt="">
+                <div class="opis">
+                    <p class="name">Paradajz</p>
+                    <p>$20</p>
+                </div>
+                <div class="ulaz">
+                    <input type="number" id="paradajz-kolicina" min="0" value="0">
+                    <br>
+                    <input type="button" class="paradajz1" value="Dodaj" onclick="dodaj_u_korpu(this)">
+                </div>
+            </div>
+            <div class="krompir">
+                <img src="carrot.png" alt="">
+                <div class="opis">
+                    <p class="name">Sargarepa</p>
+                    <p>$30</p>
+                </div>
+                <div class="ulaz">
+                    <input type="number" id="sargarepa-kolicina" min="0" value="0">
+                    <br>
+                    <input type="button" class="sargarepa1" value="Dodaj" onclick="dodaj_u_korpu(this)">
+                </div>
+            </div>
+        </div>
+        <div class="korpa-cene">
+            <h4>Korpa</h4>
+            <div class="main">
+                <p id="krompir-recenica"></p>
+                <input type="button" class="ukloni-krompir" value="Ukloni" onclick="ukloni(this)">
+            </div>
+            <div class="main">
+                <p id="paradajz-recenica"></p>
+                <input type="button" class="ukloni-paradajz" value="Ukloni" onclick="ukloni(this)">
+            </div>
+            <div class="main">
+                <p id="sargarepa-recenica"></p>
+                <input type="button" class="ukloni-sargarepu" value="Ukloni" onclick="ukloni(this)">
+            </div>
+            <p class="total">Total: <span>$0<span></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

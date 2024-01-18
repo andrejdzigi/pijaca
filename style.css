@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(pexels-fwstudio-139306.jpg);
+    background-position: center;
+    background-color: grey;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 45px;
+}
+
+.korpa{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.korpa .ponuda{
+    border: 1px solid red;
+    text-align: left;
+    border-radius: 50px 0 0 50px;
+}
+
+.korpa .ponuda h4{
+    margin-top: 15px;
+    margin-left: 25px;
+    color: white;
+    margin-bottom: 35px;
+    font-size: 25px;
+}
+
+.korpa .ponuda .krompir{
+    display: flex;
+}
+
+.korpa .ponuda .krompir img{
+    width: 20%;
+    height: auto;
+    margin-left: 10px;
+}
+
+.korpa .ponuda .krompir .opis{
+    display: block;
+    margin-left: 25px;
+    margin-right: 45px;
+    color: whitesmoke;
+}
+
+.korpa .ponuda .krompir .opis p{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.korpa .ponuda .krompir .opis .name{
+    margin-bottom: 25px;
+}
+
+.korpa .ponuda .krompir .ulaz #krompir-kolicina, #paradajz-kolicina, #sargarepa-kolicina{
+    width: 35%;
+    height: 20%;
+    margin-bottom: 15px;
+    font-size: 15px;
+    background-color: rgb(207, 207, 207);
+    outline: none;
+}
+
+.korpa .ponuda .krompir .ulaz input[type="button"]{
+    width: 38%;
+    height: 20%;
+    background-color: transparent;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.korpa .ponuda .krompir .ulaz input[type="button"]:hover{
+    transition: 1s;
+    scale: 1.1;
+    border: 1px solid white;
+}
+
+.korpa .korpa-cene .main p{
+    display: inline-block;
+}
+
+.korpa .korpa-cene .main input{
+    margin-left: 25px;
+    width: 15%;
+    height: 25%;
+    display: none;
+    background-color: transparent;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 1s;
+    padding: 7px 10px;
+}
+
+.korpa .korpa-cene .main input:hover{
+    transition: 1s;
+    scale: 1.1;
+    border: 1px solid white;
+}
+
+.korpa .korpa-cene{
+    border: 1px solid red;
+    text-align: left;
+    width: 30%;
+    border-radius: 0 50px 50px 0;
+    background-image: url('cart.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    position: relative;
+}
+
+.korpa .korpa-cene h4{
+    color: white;
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 15px;
+    margin-right: 35px;
+}
+
+.korpa-cene p{
+    margin-left: 25px;
+    margin-top: 25px;
+    font-size: 20px;
+    color: white;
+}
+
+.korpa .korpa-cene .total{
+    position: absolute;
+    bottom: 10px;
+    font-size: 30px;
+}
+
+@media (max-width: 731px){
+    .korpa{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .korpa .ponuda{
+        border-radius: 0;
+        padding-bottom: 45px;
+    }
+
+    .korpa .korpa-cene{
+        width: 99.8%;
+        border-radius: 0;
+        padding-bottom: 85px;
+        background-image: url('cart.png');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 30%;
+    }
+
+    .korpa .ponuda .krompir .ulaz #krompir-kolicina, #paradajz-kolicina, #sargarepa-kolicina{
+        width: 47%;
+        height: 20%;
+        margin-bottom: 15px;
+    }
+
+    .korpa .ponuda .krompir .ulaz input[type="button"]{
+        width: 50%;
+        height: 35%;
+    }
+    .korpa .korpa-cene .main input{
+        
+    }
+
+    .korpa .ponuda .krompir .ulaz input[type="button"]:hover{
+        
+    }
+}
